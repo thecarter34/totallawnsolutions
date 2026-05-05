@@ -1004,31 +1004,38 @@ footer {
 @media (max-width: 768px) {
   .header-inner {
     padding: 10px 15px;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
+    justify-content: space-between;
   }
 
   .logo {
-    flex: 1;
-    min-width: 0;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-shrink: 0;
   }
 
   .logo img {
-    height: 40px;
+    height: 45px;
   }
 
   .logo-text {
-    display: none;
+    display: inline;
+    font-size: 0.8rem;
+    font-weight: 600;
+    white-space: nowrap;
+    color: var(--white);
   }
 
   .header-actions {
     display: flex;
     align-items: center;
-    gap: 8px;
+    gap: 6px;
     flex-shrink: 0;
   }
 
   .header-phone {
-    font-size: 0.85rem;
+    font-size: 0.8rem;
     white-space: nowrap;
   }
 
@@ -1038,14 +1045,15 @@ footer {
   }
 
   .btn-header {
-    padding: 8px 12px;
-    font-size: 0.8rem;
+    padding: 7px 10px;
+    font-size: 0.75rem;
     white-space: nowrap;
   }
 
   .mobile-menu-toggle {
     display: block;
     flex-shrink: 0;
+    margin-left: 6px;
   }
 }
 
